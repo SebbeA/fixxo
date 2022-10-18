@@ -4,17 +4,17 @@ import MenuIcon from '../components/MenuIcon'
 
 const MainMenuSection = () => {
   return (
-    <nav class="mainmenu container">
-        <div class="logo">
+    <nav className="mainmenu container">
+        <div className="logotype">
             Fixxo.
         </div>
         <div class="menu-links">
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/categories">Categories</NavLink>
-            <NavLink to="/products">Products</NavLink>
-            <NavLink to="/contacts">Contacts</NavLink>
+            <NavLink className="menu-link" to="/" end>Home</NavLink>
+            <NavLink className="menu-link" to="/categories" end>Categories</NavLink>
+            <NavLink className="menu-link" to="/products" end>Products</NavLink>
+            <NavLink className="menu-link" to="/contacts" end>Contacts</NavLink>
         </div>
-        <div class="menu-icons">
+        <div className="menu-icons">
             <MenuIcon link="/search" icon="fa-regular fa-magnifying-glass" />
             <MenuIcon link="/compare" icon="fa-regular fa-repeat" />
             <MenuIcon link="/wishlist" icon="fa-regular fa-heart" />
