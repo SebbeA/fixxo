@@ -1,0 +1,12 @@
+.mainmenu {
+ background-color: black;
+}
+    .mainmenu .container {
+        background-color: black;
+    }
+        .mainmenu .container .logo {
+            font-size: 20px;
+        }
+        .mainmenu .container .menu-links {
+            background-color: yellow;
+        }
