@@ -60,7 +60,7 @@ header {
             width: 36px;
             height: 36px;
             border-radius: 50%;
-            box-shadow: 0 0 6px 4px var(--color-shadow-dark);
+            box-shadow: 0 0 8px 2px var(--color-shadow-dark);
             transition: 0.3s ease-in-out;
             position: relative;
         }

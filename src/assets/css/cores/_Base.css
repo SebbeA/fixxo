@@ -4,4 +4,8 @@ html, body {
     font-size: 16px;
 }
 
-/* alla a plus hover här? */
+@media (min-width: 1600px) {
+    .container {
+        max-width: var(--max-width);
+    }
+}
