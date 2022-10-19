@@ -8,8 +8,15 @@
     .mainmenu .logotype {
         font-size: 35px;
         font-weight: 700;
+        color: var(--color-dark);
+        text-decoration: none;
         letter-spacing: 1px;
+        transition: 0.3s ease-in-out;
     }
+        .mainmenu .logotype:hover {
+            text-decoration: none;
+            color: var(--color-dark);
+        }
     .mainmenu .menu-links {
         font-weight: 500;
     }
