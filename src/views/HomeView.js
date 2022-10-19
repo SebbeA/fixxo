@@ -5,7 +5,6 @@ const HomeView = () => {
   return (
     <>
       <MainMenuSection />
-      <h1>Home</h1>
     </>
   )
 }

@@ -2,7 +2,10 @@ import React from 'react'
 
 const NotFoundView = () => {
   return (
-    <div>404 - Page Not Found</div>
+    <>
+      <MainMenuSection />
+      <h1>404 - Page Not Found</h1>
+    </>
   )
 }
 
