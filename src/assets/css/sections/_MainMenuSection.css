@@ -25,7 +25,7 @@ header {
         }
     .mainmenu .menu-links {
         grid-area: menulinks;
-        display: grid;
+        display: none;
         height: 100%;
         overflow: hidden;
         font-weight: 400;
@@ -76,10 +76,14 @@ header {
     .mainmenu .menu-icons .active {
         background-color: var(--color-dark);
         color: var(--color-white);
+        text-decoration: none;
         box-shadow: 0 0 6px 4px var(--color-shadow-dark);
     }
-    .mainmenu .menu-icons .hidden {
-        display: none;
+    .mainmenu .menu-icons .btn-menu-icon {
+        background-color: var(--color-dark);
+        color: var(--color-white);
+        border: none;
+        outline: none;
     }
 
 @media (min-width: 1200px) {
