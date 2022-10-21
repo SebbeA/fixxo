@@ -1,13 +1,13 @@
-.top-grid .container {
+.flash-grid .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     width: 1430px;
-    margin-left: 110px;
+    margin-right: 85px;
     margin-bottom: 60px;
 }
 
-.top-pick {
+.flashsale {
     background-color: var(--color-grey-2);
     display: flex;
     flex-direction: column;
@@ -15,23 +15,22 @@
     justify-content: center;
     height: 680px;
     width: 825px;
-    position: relative;
 }
-    .top-pick .top-pick-body {
+    .flashsale .flashsale-body {
         width: 50%;
         text-align: center;
     }
-        .top-pick .top-pick-body .top-pick-title {
+        .flashsale .flashsale-body .flashsale-title {
             font-size: 45px;
             font-weight: 600;
             color: var(--color-white);
             margin-bottom: 40px;
         }
-    .top-pick .top-pick-body .button-theme-white {
+    .flashsale .flashsale-body .button-theme-white {
         background-color: var(--color-white);
         color: black;
     }
-        .top-pick .top-pick-body .button-theme-white:hover {
+        .flashsale .flashsale-body .button-theme-white:hover {
             background-color: var(--color-theme);
             color: black;
         }

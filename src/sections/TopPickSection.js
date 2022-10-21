@@ -6,13 +6,13 @@ const TopPickSection = ({title, products}) => {
     <section className="top-grid">
         <div className="container">
           {/* <h1>{title}</h1> */}
-          <div className="flashsale">
-            <div className="flashsale-body">
-              <h1 className="flashsale-title">2 FOR USD $29</h1>
+          <div className="top-pick">
+            <div className="top-pick-body">
+              <h1 className="top-pick-title">2 FOR USD $29</h1>
               <button className="button-theme-white">FLASH SALE</button>
             </div>
           </div>
-          <div className="row row-cols-1 row-cols-md-2 g-2" id="card">
+          <div className="row row-cols-1 row-cols-md-2 g-2">
               {
                 products.map(product => <ProductCard key={product.id} product={product} />)
               }

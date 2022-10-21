@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import MainMenuSection from '../sections/MainMenuSection'
-import FooterSection from '../sections/FooterSection'
 import ProductGridSection from '../sections/ProductGridSection'
 import ShowcaseSection from '../sections/ShowcaseSection'
 import CollabSection from '../sections/CollabSection'
 import TopPickSection from '../sections/TopPickSection'
+import FlashSaleSection from '../sections/FlashSaleSection'
+import FooterSection from '../sections/FooterSection'
 
 
 const HomeView = () => {
@@ -26,6 +27,13 @@ const HomeView = () => {
     { id: 3, name: "Modern Black Blouse", category: "Fashion", price: "$35.00", rating: 5},
     { id: 4, name: "Modern Black Blouse", category: "Fashion", price: "$35.00", rating: 5}
   ])
+
+  const [flashsaleproducts, setFlashSaleProducts] = useState([
+    { id: 1, name: "Modern Black Blouse", category: "Fashion", price: "$35.00", rating: 5},
+    { id: 2, name: "Modern Black Blouse", category: "Fashion", price: "$35.00", rating: 5},
+    { id: 3, name: "Modern Black Blouse", category: "Fashion", price: "$35.00", rating: 5},
+    { id: 4, name: "Modern Black Blouse", category: "Fashion", price: "$35.00", rating: 5}
+  ])
   
   return (
     <>
@@ -35,7 +43,8 @@ const HomeView = () => {
       </header>
       <ProductGridSection title="Featured Products" products={products} />
       <CollabSection />
-      <TopPickSection title="Flash Sale Products" products={topproducts} />
+      <TopPickSection title="Top Products" products={topproducts} />
+      <FlashSaleSection title="Flash Sale" products={flashsaleproducts}/>
       <FooterSection />
     </>
   )
