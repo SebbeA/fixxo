@@ -10,6 +10,7 @@ header {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "logo menuicons"
                          "menulinks menulinks ";
+    margin-bottom: 60px;
 }
     .mainmenu .logotype {
         grid-area: logo;
