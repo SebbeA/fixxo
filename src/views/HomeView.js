@@ -3,6 +3,7 @@ import MainMenuSection from '../sections/MainMenuSection'
 import FooterSection from '../sections/FooterSection'
 import ProductGridSection from '../sections/ProductGridSection'
 import ShowcaseSection from '../sections/ShowcaseSection'
+import CollabSection from '../sections/CollabSection'
 
 const HomeView = () => {
 
@@ -24,6 +25,7 @@ const HomeView = () => {
         <ShowcaseSection />
       </header>
       <ProductGridSection title="Featured Products" products={products} />
+      <CollabSection />
       <FooterSection />
     </>
   )
