@@ -23,7 +23,11 @@
             margin-bottom: 35px;
             font-size: 20px;
         }
-        .showcase .showcase-body .button-theme {
-            margin: 20px;
-            /* fixa button vid senare tillfälle */
-        }
+            .showcase .showcase-body .button-theme {
+                background-color: var(--color-theme);
+                color: var(--color-white);
+            }
+                .showcase .showcase-body .button-theme:hover {
+                    background-color: var(--color-dark);
+                    color: var(--color-white);
+                }

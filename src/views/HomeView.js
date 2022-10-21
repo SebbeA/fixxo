@@ -4,6 +4,8 @@ import FooterSection from '../sections/FooterSection'
 import ProductGridSection from '../sections/ProductGridSection'
 import ShowcaseSection from '../sections/ShowcaseSection'
 import CollabSection from '../sections/CollabSection'
+import TopPickSection from '../sections/TopPickSection'
+
 
 const HomeView = () => {
 
@@ -18,6 +20,13 @@ const HomeView = () => {
     { id: 8, name: "Modern Black Blouse", category: "Fashion", price: "$35.00", rating: 5}
   ])
 
+  const [topproducts, setTopProducts] = useState([
+    { id: 1, name: "Modern Black Blouse", category: "Fashion", price: "$35.00", rating: 5},
+    { id: 2, name: "Modern Black Blouse", category: "Fashion", price: "$35.00", rating: 5},
+    { id: 3, name: "Modern Black Blouse", category: "Fashion", price: "$35.00", rating: 5},
+    { id: 4, name: "Modern Black Blouse", category: "Fashion", price: "$35.00", rating: 5}
+  ])
+  
   return (
     <>
       <header>
@@ -26,6 +35,7 @@ const HomeView = () => {
       </header>
       <ProductGridSection title="Featured Products" products={products} />
       <CollabSection />
+      <TopPickSection title="Flash Sale Products" products={topproducts} />
       <FooterSection />
     </>
   )

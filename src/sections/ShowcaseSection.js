@@ -10,7 +10,7 @@ const ShowcaseSection = () => {
             <h1>Sale Up</h1>
             <h1>To 50% Off</h1>
             <p>Online shopping free home delivery over $100</p>
-            <button className="button-theme"></button>
+            <button className="button-theme">SHOP NOW</button>
         </div>
         <img src={images2} className="img-right" alt="showcase-img-2"/>
     </section>
