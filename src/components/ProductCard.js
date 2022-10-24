@@ -4,8 +4,7 @@ import { NavLink } from 'react-router-dom';
 const ProductCard = ({product}) => {
 
     const addToWishList = (e) => {
-        console.log(`${e} 
-        added to wish list`)
+        console.log("added to wish list")
     }
 
     const addToCompare = (e) => {
@@ -25,7 +24,7 @@ const ProductCard = ({product}) => {
                     <button onClick={addToCompare} className="card-icon"><i className="fa-regular fa-code-compare"></i></button>
                     <button onClick={addToCart} className="card-icon"><i className="fa-regular fa-bag-shopping"></i></button>
                 </div>
-                <NavLink to="/products/id" className="button-theme">Quick View</NavLink>
+                <NavLink to={`/products/${product.name.toLowerCase().replace(/ /gi, "-")}`} className="button-theme">Quick View</NavLink>
             </div>
             <div className="card-body">
                 <p className="card-category">{product.category}</p>
