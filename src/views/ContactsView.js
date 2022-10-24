@@ -3,6 +3,8 @@ import MainMenuSection from '../sections/MainMenuSection'
 import FooterSection from '../sections/FooterSection'
 
 const ContactsView = () => {
+  window.top.document.title = 'Contatcs | Fixxo.'
+
   return (
     <>
       <MainMenuSection />

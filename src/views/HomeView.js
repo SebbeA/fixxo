@@ -9,6 +9,7 @@ import FooterSection from '../sections/FooterSection'
 
 
 const HomeView = () => {
+  window.top.document.title = 'Fixxo.'
 
   const [products, setProducts] = useState([
     { id: 1, name: "Modern Black Blouse", category: "Fashion", price: "$35.00", rating: 5},
